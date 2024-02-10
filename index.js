@@ -202,5 +202,7 @@ const game = () => {
 };
 
 window.addEventListener("focus", () => {
-  game();
+  setTimeout(game(), 2500);
 });
+
+console.log("Game will start! Be patient...");
