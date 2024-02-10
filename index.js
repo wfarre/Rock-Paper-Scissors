@@ -202,6 +202,6 @@ const game = () => {
 };
 
 // setTimeout(() => game(), 5000);
-window.focus(() => game());
+window.focus(game());
 
 console.log("Game will start! Be patient...");
