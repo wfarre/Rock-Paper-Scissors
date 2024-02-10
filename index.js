@@ -202,6 +202,17 @@ const game = () => {
 };
 
 // setTimeout(() => game(), 5000);
-window.focus(game());
 
 console.log("Game will start! Be patient...");
+
+const startGamePromise = new Promise((resolve, reject) => {
+  setTimeout(() => game(), 5000);
+});
+
+startGamePromise
+  .then(() => console.log("Game Start"))
+  .catch(() =>
+    console.log(
+      "Too bad. You're too late. \n Please reload the page to start a new game. "
+    )
+  );
