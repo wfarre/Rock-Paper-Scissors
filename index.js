@@ -201,8 +201,9 @@ const game = () => {
       );
 };
 
-window.addEventListener("focus", () => {
+window.addEventListener("click", () => {
   setTimeout(game(), 2500);
+  console.log("Game will start! Be patient...");
 });
 
-console.log("Game will start! Be patient...");
+console.log("Please click on the window to start.");
