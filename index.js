@@ -206,11 +206,11 @@ const game = () => {
 console.log("Game will start! Be patient...");
 
 const startGamePromise = new Promise((resolve, reject) => {
-  setTimeout(() => game(), 5000);
+  setTimeout(() => resolve(gameStart), 5000);
 });
 
 startGamePromise
-  .then(() => console.log("Game Start"))
+  .then(() => game())
   .catch(() =>
     console.log(
       "Too bad. You're too late. \n Please reload the page to start a new game. "
