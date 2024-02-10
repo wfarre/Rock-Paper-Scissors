@@ -201,11 +201,11 @@ const game = () => {
       );
 };
 
-window.addEventListener("click", () => {
-  setTimeout(game(), 2500);
-  console.log("Game will start! Be patient...");
-});
-
 console.log("Please click on the window to start.");
 
 console.log("gogogogogogoogogoog");
+
+window.addEventListener("click", () => {
+  console.log("Game will start! Be patient...");
+  setTimeout(game(), 2500);
+});
