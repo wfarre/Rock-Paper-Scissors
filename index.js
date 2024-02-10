@@ -207,3 +207,5 @@ window.addEventListener("click", () => {
 });
 
 console.log("Please click on the window to start.");
+
+console.log("gogogogogogoogogoog");
