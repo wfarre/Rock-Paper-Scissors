@@ -207,6 +207,6 @@ console.log("gogogogogogoogogoog");
 
 window.addEventListener("focus", () => {
   console.log("Game will start! Be patient...");
-  setTimeout(game(), 2500);
+  setTimeout(game(), 5000);
   window.removeEventListener("focus");
 });
