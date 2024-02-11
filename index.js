@@ -201,11 +201,9 @@ const game = () => {
       );
 };
 
-console.log("Please click on the window to start.");
+const startGame = confirm("Do you want to start the game?");
 
-console.log("gogogogogogoogogoog");
+startGame ? game() : alert("Please refresh the page to start the game.");
 
-window.focus()
-setTimeout(game(), 5000);
 
 
